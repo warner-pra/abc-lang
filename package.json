@@ -1,0 +1,25 @@
+{
+    "name": "abc-lang",
+    "displayName": "Abc Lang",
+    "description": "Syntax highlighting for abc lang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "abc",
+            "aliases": ["Abc", "abc"],
+            "extensions": [".abc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "abc",
+            "scopeName": "source.abc",
+            "path": "./syntaxes/abc.tmLanguage.json"
+        }]
+    }
+}
